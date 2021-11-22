@@ -80,6 +80,9 @@ body
 .burger
 {
   display:none;
+  margin-right:10px;
+  width:50px;
+  height:50px;
 }
 @media screen and (max-width:900px)
 {
@@ -87,8 +90,33 @@ body
   {
     display:block;
   }
-  .navbar
+  .logo,.social,.links
   {
     display:none;
   }
+}
+.sidebar
+{
+  position:absolute;
+  top:0;
+  /* left:0; */
+  z-index:1;
+  background-color:var(--clr-primary-2);
+  width:100%;
+  height:100%;
+}
+.sidebarIn
+{
+  left:0;
+}
+.sidebarOut
+{
+  left:-100%;
+}
+.close-icon
+{
+  float:right;
+  position:absolute;
+  top:20px;
+  right:20px;
 }
