@@ -3,8 +3,10 @@ import {navLinks} from '../utils/Constants';
 import {Link} from 'react-router-dom';
 import logo from '../assets/logo.jpg';
 import Sidebar from './Sidebar';
+import {GrFacebook} from 'react-icons/gr';
 import '../index.css';
 import {GiHamburgerMenu} from 'react-icons/gi';
+import {FaTwitter} from 'react-icons/fa';
 const Navbar = () => {
     const [isOpenSide,setIsOpenSide]=useState(false);
     const showSideBar=()=>
@@ -32,7 +34,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='social'>
-                    social icons
+                    <GrFacebook className="social-icon"/>
+                    <FaTwitter className="social-icon"/>
                 </div>
                 <GiHamburgerMenu className="burger" onClick={showSideBar}/>
             </div>
