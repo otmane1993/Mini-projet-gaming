@@ -130,7 +130,7 @@ body
 
 #section1 h1
 {
-  padding-top:200px;
+  /* padding-top:200px; */
   font-size:2rem;
   color:var(--clr-grey-1);
   margin-left:10px;
@@ -147,12 +147,17 @@ body
   width:100px;
   height:30px;
   font-size:1rem;
-  margin-bottom:200px;
+  /* margin-bottom:200px; */
   margin-left:10px;
 }
 #section1
 {
   background-image:url('assets/doc.png');
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  height: 800px;
 }
 #section2
 {
@@ -335,4 +340,113 @@ img
   font-weight:bold;
   font-size:2rem;
   color:white;
+}
+
+        /********* About *********/
+
+.about
+{
+  font-family:'M PLUS 1', sans-serif;
+}
+.about h1
+{
+  text-align:center;
+  color:gray;
+  /* position:relative; */
+}
+.about h2
+{
+  text-align:center;
+  color:gray;
+}
+.about h1::after
+{
+  content:'';
+  width:100px;
+  height:2px;
+  display:block;
+  background-color:blue;
+  /* position:absolute; */
+  /* top:10px; */
+  margin:10px auto;
+}
+.about div
+{
+display:flex;
+justify-content:space-around;
+margin-top:30px;
+margin-bottom:30px;
+}
+.about div p
+{
+  width:35%;
+  margin-right:15%;
+}
+.about div img
+{
+  width:35%;
+}
+
+           /********  FAQ ********/
+
+.div-show
+{
+  /* width:100%; */
+  background-color:var(--clr-grey-7);
+  border-radius:10px;
+  padding:10px;
+  margin-top:10px;
+  font-weight:bold;
+}
+.div-hidden
+{
+  /* width:100%; */
+  background-color:var(--clr-grey-7);
+  border-radius:10px;
+  padding:10px;
+  margin-top:10px;
+  /* display:none; */
+}
+.hidden-div
+{
+  display:none;
+}
+.show-div
+{
+  display:block;
+}
+.div-show svg
+{
+  width:40px;
+  height:40px;
+  float:right;
+}
+.faq
+{
+  padding-bottom:20px;
+}
+.faq h1
+{
+  text-align:center;
+}
+
+      /******** Error ********/
+
+.error
+{
+  text-align:center;
+}
+.error img
+{
+  width:500px;
+  height:auto;
+}
+.error span
+{
+  color:red;
+}
+.error h1
+{
+  font-size:3rem;
+  font-weight:bold;
 }

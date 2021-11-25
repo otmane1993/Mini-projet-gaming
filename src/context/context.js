@@ -1,4 +1,4 @@
-import  Reat,{createContext, useContext,useReducer} from 'react';
+import  React,{createContext, useContext,useReducer} from 'react';
 import reducer from '../reducers/reducer';
 import {
     SIDEBAR_OPEN,
